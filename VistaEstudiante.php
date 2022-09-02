@@ -54,12 +54,6 @@
         <th>DIRECCION</th>
         <th>TELEFONO</th>
         <th colspan="2">OPERACIONES</th>
-    <?php
-        include_once "EstudianteModel.php";
-        $Estudiante = new Estudiante();
-        $ListaEstudiantes = $Estudiante->ListarEstudiantes();
-        while($Estudiantes = mysqli_fetch_assoc($ListaEstudiantes))
-        {?>
           <tr>
                 <td>Carmen</td>
                 <td>Herrera</td>
@@ -69,8 +63,6 @@
                 <td><a href="eliminar.html"><img src="eliminar.png"></a></td>
           </tr>
           
-       <?php } ?>
-    
     </table>
 </body>
 </html>
